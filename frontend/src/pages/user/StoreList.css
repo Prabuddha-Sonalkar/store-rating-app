@@ -1,0 +1,116 @@
+.stores-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px 20px;
+}
+
+.stores-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.stores-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stores-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #222;
+}
+
+.stores-header p {
+  color: #666;
+  margin-top: 8px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 400px;
+  max-width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+  gap: 25px;
+}
+
+.store-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow:
+    0 2px 10px
+    rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.store-card:hover {
+  transform: translateY(-5px);
+}
+
+.store-card h3 {
+  margin: 0;
+  color: #222;
+}
+
+.address {
+  color: #666;
+  margin: 12px 0;
+  min-height: 40px;
+}
+
+.rating-section {
+  margin: 20px 0;
+}
+
+.rating-section span {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.rating-section h2 {
+  color: #4f46e5;
+  margin: 0;
+}
+
+.select-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-section label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.select-section select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.no-store {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+  grid-column: 1 / -1;
+}
